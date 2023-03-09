@@ -1,0 +1,272 @@
+
+body
+    font-family: 'Poppins', sans-serif
+    font-family: 'Roboto', sans-serif
+img
+    max-width: 100%
+
+#hero
+    background-color: #016f5c
+    padding-top: .5rem
+    .burger-menu
+        display: none
+        .burger-menu-button
+            border-color: transparent
+            background-color: transparent
+            font-size: 2rem
+        .offcanvas
+            background-color: #016f5c
+            width: 100%
+            .offcanvas-title
+                font-size: 1.8rem
+                font-weight: 600
+                color: #ff6718
+            .navLogoCanvas
+                border-radius: 1000px
+                width: 100px
+                height: 45px
+                object-fit: cover
+        .offcanvas-body
+            background-color: #fff
+    .navLogo
+        width: 100px
+        height: 45px
+    .navbar-nav
+        flex-direction: row
+        gap:30px
+        .nav-item
+            color: #fff
+    .formDiv
+        width: 100%
+        display: flex
+        .formX
+            width: 55%
+        .form-control
+            color:#fff
+            background-color: transparent
+            border-color: #fff
+            &:focus
+                box-shadow: none
+                border-color: #fff
+            &::placeholder
+                color: #ffffff7d
+        .buttons
+            display: flex
+            width: 45%
+            .btn-warning
+                width: 100%
+                color: #fff
+                background-color: #ff6718
+                border-color: #ff6718
+            .btn-light
+                width: 100%
+    .leftSide
+        padding: 9rem 5rem 
+        .left-side-text
+            h1
+                font-size: 4rem
+                font-weight: 700
+                font-style: italic
+                color: #fff
+        .left-side-content
+            p
+                color: #fff
+                font-weight: 100
+                font-size: 1.2rem
+        .left-side-buttons
+            width: 100%
+            .btn-warning
+                width: 45%
+                color: #fff
+                background-color: #ff6718
+                border-color: #ff6718
+                transition: all .5s ease
+                &:hover
+                    opacity: .9
+            .btn-light
+                width: 45%
+    .rightSide
+        padding: 5rem 5rem
+#sectionOne
+    .sectionTop
+        padding: 5rem 5rem
+        .sectionText
+            font-size: 4rem
+            font-weight: 300
+            color: #404040
+    .sectionContent
+        .nav
+            .nav-link
+                color: #808080
+            .nav-link.active
+                color: #ff6718
+    .tab-content
+            margin-top: 2rem
+            .tab-pane-content
+                margin-top:2rem
+                width: 100%
+                .tab-pane-number
+                    width: 5%
+                    align-self: center
+                    span
+                        width: 78px
+                        height: 64px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        font-size: 40px
+                        font-weight: 400
+                        color: #e0e0e0
+                .tab-pane-user
+                    width: 25%
+                    display: flex
+                    align-items: center
+                    gap:1.5rem
+                    .user-img
+                        width: 50px
+                        height: 50px
+                        border-radius: 50%
+                        background-color: #fff
+                        object-fit: cover
+                        cursor: pointer
+                        .userImg
+                            width: 50px
+                            height: 50px
+                            border-radius: 50%
+                            object-fit: cover
+                .user
+                    .user-id
+                        color: #016f5c
+                        font-size: 1.2rem
+                        font-weight: 900
+                        cursor: pointer
+                    .subject
+                        font-style: italic
+                .user-write
+                    width: 70%
+    .sec_bottom
+        margin: auto
+        text-align: center
+        .whoButton
+            padding-top: 2.5rem
+            width: 100%
+            .whoBtn
+                color: #fff
+                height: 52px
+                font-size: 17px
+                font-weight: 600
+                background-color: #ff6718
+                border-color: #ff6718
+                transition: all .5s ease
+                &:hover
+                    background-color: #d65915
+#secitonTwo
+    padding: 15rem 5rem
+    .sectionText
+        font-size: 4rem
+        font-weight: 300
+        color: #404040
+    .box-model-text
+        padding: 5rem 0
+        .box-text
+            h3
+                font-size: 3rem
+                font-weight: 400
+                color: #404040
+        .box-text-content
+            padding: 2rem 0
+        .box-text-link
+            position: relative
+            display: inline-block
+            cursor: pointer
+            a
+                color: #ff6718
+                text-decoration: none
+                font-size: 1.5rem
+            i
+                position: absolute
+                top:2px
+                transition: all .7s ease
+                color: #fff
+                font-size: 1.5rem
+            &:hover i
+                transform: translateX(1rem)
+                color: #ff6718
+
+
+
+//****************************************
+
+
+// Responive
+//phone
+@media screen and (max-width:576px)
+    .navbar-nav
+        display: none
+    .navLogo
+        display: none
+    .form-control
+        display: none
+    .formX
+        display: none
+    .buttons
+        width: 100% !important
+    .burger-menu
+        display: block !important
+    .leftSide
+        padding: 3rem 1rem !important
+        .left-side-text
+            h1
+                font-size: 3rem !important
+                font-style: normal !important
+                line-height: 50px
+                font-weight: 400 !important
+        .left-side-content
+            p
+                font-size: 1rem !important
+        .left-side-buttons
+            .btn-warning
+                width: 100% !important
+                margin-bottom: .5rem
+                height: 50px !important
+            .btn-light
+                width: 100% !important
+                height: 50px !important
+    .rightSide
+        padding: 3rem 1rem !important
+    section
+        .sectionTop
+            .sectionText
+                font-size: 2.5rem !important
+        .tab-pane-content
+            display: block
+            .tab-pane-number
+                display: none
+            .tab-pane-user
+                width: 100% !important
+                display: block !important
+            .user-write
+                margin-top: 1rem
+                width: 100% !important
+
+//tablet
+@media screen and (max-width:768px)
+    .logo
+        width: 50% !important
+    .drop
+        width: 50% !important
+    .tab-pane-number
+        display: none
+    .tab-pane-user
+        width: 30% !important
+    .sectionText
+        font-size: 2.5rem
+    #secitonTwo
+        padding: 2rem 1rem
+        .sectionText
+            font-size: 3rem
+        .box-modelİmg
+            align-self: center
+        .box-text
+            h3
+                font-size: 2rem !important
