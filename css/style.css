@@ -256,9 +256,12 @@ img {
 
 #sectionThree {
   background-color: #eeeeee;
-  padding: 10rem 5rem;
+  padding: 5rem 5rem;
 }
-#sectionThree .sectionText {
+#sectionThree .sectionTextP {
+  padding-bottom: 5rem;
+}
+#sectionThree .sectionTextP .sectionText {
   font-size: 4rem;
   font-weight: 300;
   color: #404040;
@@ -371,6 +374,15 @@ img {
     margin-top: 1rem;
     width: 100% !important;
   }
+  #sectionThree {
+    padding: 5rem 1rem !important;
+  }
+  #sectionThree .sectionTextP .sectionText {
+    font-size: 1.9rem !important;
+  }
+  #sectionThree .collapseParent {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .logo {
@@ -392,6 +404,7 @@ img {
     padding: 2rem 1rem;
   }
   #sectionTwo .sectionText {
+    padding-top: 5rem;
     font-size: 3rem;
   }
   #sectionTwo .box-modelİmg {
@@ -399,5 +412,11 @@ img {
   }
   #sectionTwo .box-text h3 {
     font-size: 2rem !important;
+  }
+  #sectionThree {
+    padding: 2rem 1rem;
+  }
+  #sectionThree .sectionTextP .sectionText {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */

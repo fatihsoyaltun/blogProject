@@ -31,13 +31,22 @@ $('.owl-carousel').owlCarousel({
 });
 
 // collapse icon
-const icon = document.querySelector("#collapse_icon");
-document.querySelector(".collapseBtn").addEventListener("click",() => {
-    if (icon.className === "fa-solid fa-chevron-down") {
-        icon.className = "fa-solid fa-chevron-up";
-    }else{
-        icon.className = "fa-solid fa-chevron-down";
+const collapseBtns = document.querySelectorAll('.collapseBtn');
+collapseBtns.forEach((collapseBtn) => {
+  collapseBtn.addEventListener('click', () => {
+    const icon = collapseBtn.querySelector('.collapse_icon');
+    const collapse = collapseBtn.nextElementSibling;
+    if (icon.classList.contains('fa-chevron-down')) {
+      icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+    } else {
+      icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
     }
+    collapseBtns.forEach((otherCollapseBtn) => {
+      const otherCollapse = otherCollapseBtn.nextElementSibling;
+      if (otherCollapse != collapse) {
+        otherCollapse.classList.remove('show');
+        otherCollapseBtn.querySelector('.collapse_icon').classList.replace('fa-chevron-up', 'fa-chevron-down');
+      }
+    });
+  });
 });
-
-

@@ -197,11 +197,13 @@ img
                 color: #ff6718
 #sectionThree
     background-color: #eeeeee
-    padding: 10rem 5rem
-    .sectionText
-        font-size: 4rem
-        font-weight: 300
-        color: #404040
+    padding: 5rem 5rem
+    .sectionTextP
+        padding-bottom: 5rem
+        .sectionText
+            font-size: 4rem
+            font-weight: 300
+            color: #404040
     .collapseParent
         width: 60%
         margin: auto
@@ -295,6 +297,13 @@ img
             .user-write
                 margin-top: 1rem
                 width: 100% !important
+    #sectionThree
+        padding: 5rem 1rem !important
+        .sectionTextP
+            .sectionText
+                font-size: 1.9rem !important
+        .collapseParent
+            width: 100%
 
 //tablet
 @media screen and (max-width:768px)
@@ -311,9 +320,15 @@ img
     #sectionTwo
         padding: 2rem 1rem
         .sectionText
+            padding-top: 5rem
             font-size: 3rem
         .box-modelİmg
             align-self: center
         .box-text
             h3
                 font-size: 2rem !important
+    #sectionThree
+        padding: 2rem 1rem
+        .sectionTextP
+            .sectionText
+                font-size: 3rem
