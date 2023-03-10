@@ -50,6 +50,10 @@ img {
 #hero .navbar-nav .nav-item {
   color: #fff;
 }
+#hero .navbar-nav .nav-item .dropdown-menu {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  inset: 0px auto auto -40px !important;
+}
 #hero .formDiv {
   width: 100%;
   display: flex;
@@ -209,43 +213,100 @@ img {
   background-color: #d65915;
 }
 
-#secitonTwo {
-  padding: 15rem 5rem;
+#sectionTwo {
+  padding: 10rem 5rem;
 }
-#secitonTwo .sectionText {
+#sectionTwo .sectionText {
   font-size: 4rem;
   font-weight: 300;
   color: #404040;
 }
-#secitonTwo .box-model-text {
+#sectionTwo .box-model-text {
   padding: 5rem 0;
 }
-#secitonTwo .box-model-text .box-text h3 {
+#sectionTwo .box-model-text .box-text h3 {
   font-size: 3rem;
   font-weight: 400;
   color: #404040;
 }
-#secitonTwo .box-model-text .box-text-content {
+#sectionTwo .box-model-text .box-text-content {
   padding: 2rem 0;
 }
-#secitonTwo .box-model-text .box-text-link {
+#sectionTwo .box-model-text .box-text-link {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
-#secitonTwo .box-model-text .box-text-link a {
+#sectionTwo .box-model-text .box-text-link a {
   color: #ff6718;
   text-decoration: none;
   font-size: 1.5rem;
 }
-#secitonTwo .box-model-text .box-text-link i {
+#sectionTwo .box-model-text .box-text-link i {
   position: absolute;
   top: 2px;
   transition: all 0.7s ease;
   color: #fff;
   font-size: 1.5rem;
 }
-#secitonTwo .box-model-text .box-text-link:hover i {
+#sectionTwo .box-model-text .box-text-link:hover i {
+  transform: translateX(1rem);
+  color: #ff6718;
+}
+
+#sectionThree {
+  background-color: #eeeeee;
+  padding: 10rem 5rem;
+}
+#sectionThree .sectionText {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #404040;
+}
+#sectionThree .collapseParent {
+  width: 60%;
+  margin: auto;
+}
+#sectionThree .collapseParent .collapseOne .collapseBtn {
+  text-align: start;
+  display: flex;
+  gap: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#sectionThree .collapseParent .collapseOne .collapseBtn i {
+  font-size: 1.8rem;
+  color: #ff6517;
+  align-self: center;
+  -webkit-text-stroke: 1px #ff6517;
+}
+#sectionThree .collapseParent .collapseOne .collapseBtn a {
+  color: #404040;
+  text-decoration: none;
+  font-size: 3rem;
+}
+#sectionThree .collapseParent .myShow .card-body {
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+}
+#sectionThree .collapseParent .myShow .card-body .box-text-link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+#sectionThree .collapseParent .myShow .card-body .box-text-link a {
+  color: #ff6517;
+  text-decoration: none;
+  font-size: 1rem;
+}
+#sectionThree .collapseParent .myShow .card-body .box-text-link i {
+  position: absolute;
+  top: 2px;
+  transition: all 0.7s ease;
+  color: #eeeeee;
+  font-size: 1rem;
+}
+#sectionThree .collapseParent .myShow .card-body .box-text-link:hover i {
   transform: translateX(1rem);
   color: #ff6718;
 }
@@ -327,16 +388,16 @@ img {
   .sectionText {
     font-size: 2.5rem;
   }
-  #secitonTwo {
+  #sectionTwo {
     padding: 2rem 1rem;
   }
-  #secitonTwo .sectionText {
+  #sectionTwo .sectionText {
     font-size: 3rem;
   }
-  #secitonTwo .box-modelİmg {
+  #sectionTwo .box-modelİmg {
     align-self: center;
   }
-  #secitonTwo .box-text h3 {
+  #sectionTwo .box-text h3 {
     font-size: 2rem !important;
   }
 }/*# sourceMappingURL=style.css.map */

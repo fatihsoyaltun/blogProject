@@ -36,6 +36,9 @@ img
         gap:30px
         .nav-item
             color: #fff
+            .dropdown-menu
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+                inset: 0px auto auto -40px !important
     .formDiv
         width: 100%
         display: flex
@@ -160,8 +163,8 @@ img
                 transition: all .5s ease
                 &:hover
                     background-color: #d65915
-#secitonTwo
-    padding: 15rem 5rem
+#sectionTwo
+    padding: 10rem 5rem
     .sectionText
         font-size: 4rem
         font-weight: 300
@@ -192,8 +195,52 @@ img
             &:hover i
                 transform: translateX(1rem)
                 color: #ff6718
-
-
+#sectionThree
+    background-color: #eeeeee
+    padding: 10rem 5rem
+    .sectionText
+        font-size: 4rem
+        font-weight: 300
+        color: #404040
+    .collapseParent
+        width: 60%
+        margin: auto
+        .collapseOne
+            .collapseBtn
+                text-align: start
+                display: flex
+                gap: 1rem
+                width: fit-content
+                i
+                    font-size: 1.8rem
+                    color: #ff6517
+                    align-self: center
+                    -webkit-text-stroke: 1px #ff6517
+                a
+                    color: #404040
+                    text-decoration: none
+                    font-size: 3rem
+        .myShow
+            .card-body
+                background-color: #eeeeee
+                border-color: #eeeeee
+                .box-text-link
+                    position: relative
+                    display: inline-block
+                    cursor: pointer
+                    a
+                        color: #ff6517
+                        text-decoration: none
+                        font-size: 1rem
+                    i
+                        position: absolute
+                        top:2px
+                        transition: all .7s ease
+                        color: #eeeeee
+                        font-size: 1rem
+                    &:hover i
+                        transform: translateX(1rem)
+                        color: #ff6718
 
 //****************************************
 
@@ -261,7 +308,7 @@ img
         width: 30% !important
     .sectionText
         font-size: 2.5rem
-    #secitonTwo
+    #sectionTwo
         padding: 2rem 1rem
         .sectionText
             font-size: 3rem

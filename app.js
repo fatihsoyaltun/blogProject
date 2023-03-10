@@ -1,4 +1,11 @@
 
+
+//Aos animate
+AOS.init({
+    duration: 1200,
+})
+
+// OWl carousel
 $('.owl-carousel').owlCarousel({
     loop:false,
     margin:10,
@@ -22,3 +29,15 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+// collapse icon
+const icon = document.querySelector("#collapse_icon");
+document.querySelector(".collapseBtn").addEventListener("click",() => {
+    if (icon.className === "fa-solid fa-chevron-down") {
+        icon.className = "fa-solid fa-chevron-up";
+    }else{
+        icon.className = "fa-solid fa-chevron-down";
+    }
+});
+
+
