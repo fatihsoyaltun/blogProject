@@ -4,7 +4,13 @@ body
     font-family: 'Roboto', sans-serif
 img
     max-width: 100%
-
+a
+    text-decoration: none
+ul
+    margin: 0
+    padding: 0
+    li
+        list-style: none
 #hero
     background-color: #016f5c
     padding-top: .5rem
@@ -243,6 +249,84 @@ img
                     &:hover i
                         transform: translateX(1rem)
                         color: #ff6718
+#sectionFour
+    padding-top: 120px
+    padding-bottom: 120px
+    .section-four-text
+        width: 100%
+        text-align: center
+        h4
+            font-size: 32px
+            line-height: 42px
+            padding-bottom: 2rem
+        span
+            font-weight: 600
+            font-size: 1.5rem
+    .section-four-button
+        padding-top: 2.5rem
+        width: 100%
+        text-align: center
+        .createBtn
+            color: #fff
+            height: 52px
+            font-size: 17px
+            font-weight: 600
+            background-color: #ff6718
+            border-color: #ff6718
+            transition: all .5s ease
+            &:hover
+                background-color: #d65915
+#myFooter
+    background-color: #eeeeee
+    padding: 5rem 5rem 1rem 5rem
+    .footer-image
+        .footer-img
+            width: 50px
+            height: 50px
+            margin-bottom: 2rem
+            img
+                border-radius: 1000px
+        h5
+            font-style: italic
+            text-align: left
+            font-weight: 400
+            font-size: 20px
+            line-height: 28px
+            color: gray
+    .footer-text
+        h5
+            font-size: 16px
+            font-weight: 600
+            line-height: 25.5px
+            color: #3a261c
+        ul
+            cursor: pointer
+            li
+                line-height: 1.5
+                color: gray
+                margin-bottom: 10px
+                &:hover
+                    text-decoration: underline
+    .footer-bottom-left
+        .app-badges
+            display: flex
+            flex-direction: row
+            gap: 8px
+            .app-badge
+                border: 1px solid #e0e0e0
+                padding: 1px
+                background: #fff
+                overflow: hidden
+                border-radius: 8px
+    .footer-bottom-right
+        text-align: end
+        color: gray
+        span
+            margin-left: 20px
+        a
+            margin-left: 20px
+            color: gray
+            text-decoration: underline
 
 //****************************************
 

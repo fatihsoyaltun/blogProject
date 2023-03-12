@@ -8,6 +8,18 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 #hero {
   background-color: #016f5c;
   padding-top: 0.5rem;
@@ -312,6 +324,103 @@ img {
 #sectionThree .collapseParent .myShow .card-body .box-text-link:hover i {
   transform: translateX(1rem);
   color: #ff6718;
+}
+
+#sectionFour {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+#sectionFour .section-four-text {
+  width: 100%;
+  text-align: center;
+}
+#sectionFour .section-four-text h4 {
+  font-size: 32px;
+  line-height: 42px;
+  padding-bottom: 2rem;
+}
+#sectionFour .section-four-text span {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+#sectionFour .section-four-button {
+  padding-top: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+#sectionFour .section-four-button .createBtn {
+  color: #fff;
+  height: 52px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #ff6718;
+  border-color: #ff6718;
+  transition: all 0.5s ease;
+}
+#sectionFour .section-four-button .createBtn:hover {
+  background-color: #d65915;
+}
+
+#myFooter {
+  background-color: #eeeeee;
+  padding: 5rem 5rem 1rem 5rem;
+}
+#myFooter .footer-image .footer-img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+#myFooter .footer-image .footer-img img {
+  border-radius: 1000px;
+}
+#myFooter .footer-image h5 {
+  font-style: italic;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: gray;
+}
+#myFooter .footer-text h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.5px;
+  color: #3a261c;
+}
+#myFooter .footer-text ul {
+  cursor: pointer;
+}
+#myFooter .footer-text ul li {
+  line-height: 1.5;
+  color: gray;
+  margin-bottom: 10px;
+}
+#myFooter .footer-text ul li:hover {
+  text-decoration: underline;
+}
+#myFooter .footer-bottom-left .app-badges {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+#myFooter .footer-bottom-left .app-badges .app-badge {
+  border: 1px solid #e0e0e0;
+  padding: 1px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+#myFooter .footer-bottom-right {
+  text-align: end;
+  color: gray;
+}
+#myFooter .footer-bottom-right span {
+  margin-left: 20px;
+}
+#myFooter .footer-bottom-right a {
+  margin-left: 20px;
+  color: gray;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 576px) {
