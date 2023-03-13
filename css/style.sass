@@ -105,6 +105,32 @@ ul
             color: #404040
     .sectionContent
         .nav
+            .owl-carousel
+                .owl-nav
+                    display: flex
+                    position: relative
+                    margin-top: 0
+                    .owl-prev
+                        position: absolute
+                        top: -65px !important
+                        left: -25px
+                        font-size: 50px
+                        color: #ff6517
+                        cursor: pointer
+                        &:hover
+                            background: none
+                            opacity: .8
+                    .disabled
+                        opacity: 1
+                    .owl-next
+                        position: absolute
+                        top: -65px !important
+                        right: -15px
+                        font-size: 50px
+                        color: #ff6517
+                        cursor: pointer
+                        &:hover
+                            background: none
             .nav-link
                 color: #808080
             .nav-link.active
@@ -400,6 +426,9 @@ ul
         width: 100% !important
     .burger-menu
         display: block !important
+    .owl-nav
+        .owl-prev,.owl-next
+            display: none !important
     .leftSide
         padding: 3rem 1rem !important
         .left-side-text
@@ -423,8 +452,9 @@ ul
         padding: 3rem 1rem !important
     section
         .sectionTop
+            padding: 5rem 0 !important
             .sectionText
-                font-size: 2.5rem !important
+                font-size: 2rem !important
         .tab-pane-content
             display: block
             .tab-pane-number

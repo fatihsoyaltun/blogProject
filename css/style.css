@@ -143,6 +143,37 @@ ul li {
   font-weight: 300;
   color: #404040;
 }
+#sectionOne .sectionContent .nav .owl-carousel .owl-nav {
+  display: flex;
+  position: relative;
+  margin-top: 0;
+}
+#sectionOne .sectionContent .nav .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: -65px !important;
+  left: -25px;
+  font-size: 50px;
+  color: #ff6517;
+  cursor: pointer;
+}
+#sectionOne .sectionContent .nav .owl-carousel .owl-nav .owl-prev:hover {
+  background: none;
+  opacity: 0.8;
+}
+#sectionOne .sectionContent .nav .owl-carousel .owl-nav .disabled {
+  opacity: 1;
+}
+#sectionOne .sectionContent .nav .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: -65px !important;
+  right: -15px;
+  font-size: 50px;
+  color: #ff6517;
+  cursor: pointer;
+}
+#sectionOne .sectionContent .nav .owl-carousel .owl-nav .owl-next:hover {
+  background: none;
+}
 #sectionOne .sectionContent .nav .nav-link {
   color: #808080;
 }
@@ -514,6 +545,9 @@ ul li {
   .burger-menu {
     display: block !important;
   }
+  .owl-nav .owl-prev, .owl-nav .owl-next {
+    display: none !important;
+  }
   .leftSide {
     padding: 3rem 1rem !important;
   }
@@ -538,8 +572,11 @@ ul li {
   .rightSide {
     padding: 3rem 1rem !important;
   }
+  section .sectionTop {
+    padding: 5rem 0 !important;
+  }
   section .sectionTop .sectionText {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
   section .tab-pane-content {
     display: block;
