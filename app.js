@@ -50,3 +50,12 @@ collapseBtns.forEach((collapseBtn) => {
     });
   });
 });
+
+// sign
+const signBtns = document.querySelectorAll(".signBtn")
+
+signBtns.forEach(btn => {
+  btn.addEventListener('click',()=>{
+    window.location.href="routers/sign_in.html";
+  });
+});

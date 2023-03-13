@@ -328,6 +328,62 @@ ul
             margin-left: 20px
             color: gray
             text-decoration: underline
+//* Sign in
+#signHeader
+    background-color: #eeeeee
+    .homepage-nav
+        padding-top: 1rem
+        .left
+            a
+                cursor: pointer
+                color: black
+                i
+                    font-size: 1.2rem
+                    transition: all .5s
+                    &:hover
+                        color: #ff6718
+        .center
+            text-align: center
+            h1
+                font-size: 22px
+                font-weight: 900
+                color: #404040
+                line-height: 27.5px
+#sign
+    background-color: #eeeeee
+#signSection
+    background-color: #eeeeee
+    .top-content-text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .textOne
+            font-size: 16px
+            line-height: 24px
+            color: #666
+        .textTwo
+            font-weight: 700
+            font-size: 24px
+            line-height: 38px
+            color: #1c110b
+    .center-content
+        .form-floating
+            background-color: #eeeeee
+            .form-control
+                border-radius: 0
+                background-color: #eeeeee
+                border: none
+                border-bottom: 1px solid gray
+                &:focus
+                    box-shadow: none
+    .bottom-content
+        .signBtn
+            color: #fff
+            height: 52px
+            font-size: 17px
+            font-weight: 600
+            background-color: #ff6718
+            border-color: #ff6718
 
 // Responive
 //phone
@@ -396,6 +452,9 @@ ul
                 margin: 0
             a
                 margin: 0
+    #signSection
+        .form-control
+            display: block
 
 //tablet
 @media screen and (max-width:768px)

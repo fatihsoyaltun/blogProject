@@ -424,6 +424,77 @@ ul li {
   text-decoration: underline;
 }
 
+#signHeader {
+  background-color: #eeeeee;
+}
+#signHeader .homepage-nav {
+  padding-top: 1rem;
+}
+#signHeader .homepage-nav .left a {
+  cursor: pointer;
+  color: black;
+}
+#signHeader .homepage-nav .left a i {
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+#signHeader .homepage-nav .left a i:hover {
+  color: #ff6718;
+}
+#signHeader .homepage-nav .center {
+  text-align: center;
+}
+#signHeader .homepage-nav .center h1 {
+  font-size: 22px;
+  font-weight: 900;
+  color: #404040;
+  line-height: 27.5px;
+}
+
+#sign {
+  background-color: #eeeeee;
+}
+
+#signSection {
+  background-color: #eeeeee;
+}
+#signSection .top-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#signSection .top-content-text .textOne {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666;
+}
+#signSection .top-content-text .textTwo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  color: #1c110b;
+}
+#signSection .center-content .form-floating {
+  background-color: #eeeeee;
+}
+#signSection .center-content .form-floating .form-control {
+  border-radius: 0;
+  background-color: #eeeeee;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+#signSection .center-content .form-floating .form-control:focus {
+  box-shadow: none;
+}
+#signSection .bottom-content .signBtn {
+  color: #fff;
+  height: 52px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #ff6718;
+  border-color: #ff6718;
+}
+
 @media screen and (max-width: 576px) {
   .navbar-nav {
     display: none;
@@ -506,6 +577,9 @@ ul li {
   }
   #myFooter .footer-bottom-right a {
     margin: 0;
+  }
+  #signSection .form-control {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {
