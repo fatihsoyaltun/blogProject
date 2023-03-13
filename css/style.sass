@@ -259,6 +259,7 @@ ul
             font-size: 32px
             line-height: 42px
             padding-bottom: 2rem
+            font-style: italic
         span
             font-weight: 600
             font-size: 1.5rem
@@ -278,12 +279,12 @@ ul
                 background-color: #d65915
 #myFooter
     background-color: #eeeeee
-    padding: 5rem 5rem 1rem 5rem
+    padding: 3rem 5rem 1rem 5rem
     .footer-image
         .footer-img
-            width: 50px
-            height: 50px
-            margin-bottom: 2rem
+            cursor: pointer
+            width: 70px
+            height: 70px
             img
                 border-radius: 1000px
         h5
@@ -327,9 +328,6 @@ ul
             margin-left: 20px
             color: gray
             text-decoration: underline
-
-//****************************************
-
 
 // Responive
 //phone
@@ -388,19 +386,31 @@ ul
                 font-size: 1.9rem !important
         .collapseParent
             width: 100%
+    #myFooter
+        padding: 1rem
+        .footer-bottom-right
+            display: flex
+            flex-direction: column
+            text-align: start
+            span
+                margin: 0
+            a
+                margin: 0
 
 //tablet
 @media screen and (max-width:768px)
     .logo
-        width: 50% !important
+        width: 20% !important
     .drop
-        width: 50% !important
+        width: 80% !important
+        .navbar-nav
+            float: right
     .tab-pane-number
         display: none
     .tab-pane-user
         width: 30% !important
     .sectionText
-        font-size: 2.5rem
+        font-size: 2.5rem !important
     #sectionTwo
         padding: 2rem 1rem
         .sectionText
@@ -416,3 +426,5 @@ ul
         .sectionTextP
             .sectionText
                 font-size: 3rem
+    #myFooter
+        padding: 1rem
