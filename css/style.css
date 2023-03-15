@@ -610,28 +610,28 @@ ul li {
   justify-content: space-between;
   padding: 10px;
 }
-#profilePage .profileRightSide .reader-nav-top .navText {
+#profilePage .profileRightSide .fixed .navText {
   cursor: pointer;
 }
-#profilePage .profileRightSide .reader-nav-top .navText span {
+#profilePage .profileRightSide .fixed .navText span {
   font-size: 24px;
   font-weight: 700;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule {
+#profilePage .profileRightSide .fixed .navModule {
   flex: 1 1 1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .form {
+#profilePage .profileRightSide .fixed .navModule .form {
   display: flex;
   flex: 0 1 500px;
   position: relative;
   height: 40px;
   align-items: stretch;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .form i {
+#profilePage .profileRightSide .fixed .navModule .form i {
   position: absolute;
   left: 14px;
   top: 12px;
@@ -639,7 +639,7 @@ ul li {
   width: 20px;
   stroke: #71767b;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .form .module_input {
+#profilePage .profileRightSide .fixed .navModule .form .module_input {
   display: flex;
   flex: 1 1 1px;
   width: 0;
@@ -650,28 +650,28 @@ ul li {
   background: #fff;
   font-size: 14px;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .form .module_input:focus-visible {
+#profilePage .profileRightSide .fixed .navModule .form .module_input:focus-visible {
   outline: none;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns {
+#profilePage .profileRightSide .fixed .navModule .navBtns {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnOne {
+#profilePage .profileRightSide .fixed .navModule .navBtns .btnOne {
   cursor: pointer;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnOne button {
+#profilePage .profileRightSide .fixed .navModule .navBtns .btnOne button {
   border-color: transparent;
   background-color: #eeeeee;
   border-radius: 1000000px;
   padding: 5px 10px;
   height: 40px;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnOne button:hover {
+#profilePage .profileRightSide .fixed .navModule .navBtns .btnOne button:hover {
   background-color: #afafaf;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnTwo {
+#profilePage .profileRightSide .fixed .navModule .navBtns .btnTwo {
   cursor: pointer;
   width: 50px;
   height: 40px;
@@ -681,13 +681,13 @@ ul li {
   background-color: #eeeeee;
   border-radius: 1000000px;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnTwo:hover {
+#profilePage .profileRightSide .fixed .navModule .navBtns .btnTwo:hover {
   background-color: #afafaf;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnThree {
+#profilePage .profileRightSide .fixed .navModule .navBtns .btnThree {
   cursor: pointer;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnThree .group {
+#profilePage .profileRightSide .fixed .navModule .navBtns .btnThree .group {
   width: 50px;
   height: 40px;
   display: flex;
@@ -697,7 +697,7 @@ ul li {
   background-color: #eeeeee;
   border-radius: 1000000px;
 }
-#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnThree .group:hover {
+#profilePage .profileRightSide .fixed .navModule .navBtns .btnThree .group:hover {
   background-color: #afafaf;
 }
 #profilePage .owlTwo {
