@@ -529,7 +529,10 @@ ul li {
 #profilePage .profileLeftSide {
   padding: 2rem 1rem;
   border-right: 1px solid black;
-  height: 100vh;
+}
+#profilePage .profileLeftSide .profileParent {
+  height: 90vh;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -755,12 +758,16 @@ ul li {
   opacity: 0.8;
 }
 #profilePage .blogBox {
+  position: relative;
   cursor: pointer;
   padding: 10px;
 }
 #profilePage .blogBox:hover {
   background-color: #eeeeee;
   border-radius: 5px;
+}
+#profilePage .blogBox:hover .box-hover {
+  display: block;
 }
 #profilePage .blogBox .blogBox-top {
   padding-bottom: 1.5rem;
@@ -774,6 +781,44 @@ ul li {
   font-weight: bold;
   color: #000;
 }
+#profilePage .blogBox .box-hover {
+  display: none;
+}
+#profilePage .blogBox .hoverBox {
+  position: absolute;
+  display: flex;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 4px;
+  top: -15px;
+  right: 10px;
+}
+#profilePage .blogBox .hoverBox .boxOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  border-radius: 5px;
+}
+#profilePage .blogBox .hoverBox .boxOne:hover {
+  background-color: #e0e0e0;
+}
+#profilePage .blogBox .hoverBox .boxTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  border-radius: 5px;
+}
+#profilePage .blogBox .hoverBox .boxTwo:hover {
+  background-color: #e0e0e0;
+}
+
 @media screen and (max-width: 576px) {
   .navbar-nav {
     display: none;

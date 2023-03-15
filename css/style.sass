@@ -415,10 +415,12 @@ ul
     .profileLeftSide
         padding: 2rem 1rem
         border-right: 1px solid black
-        height: 100vh
-        display: flex
-        flex-direction: column
-        justify-content: space-between
+        .profileParent
+            height: 90vh
+            position: fixed
+            display: flex
+            flex-direction: column
+            justify-content: space-between
         .profile-left-top
             cursor: pointer
             .profile_left
@@ -599,11 +601,14 @@ ul
                             background: none
                             opacity: .8
     .blogBox
+        position: relative
         cursor: pointer
         padding: 10px
         &:hover
             background-color: #eeeeee
             border-radius: 5px
+        &:hover .box-hover
+            display: block
         .blogBox-top
             padding-bottom: 1.5rem
             color: gray
@@ -615,7 +620,37 @@ ul
                     font-size: 1.2rem
                     font-weight: bold
                     color: #000
-            .messageImg
+        .box-hover
+            display: none
+        .hoverBox
+            position: absolute
+            display: flex
+            border: 1px solid #e0e0e0
+            background-color: #ffffff
+            border-radius: 10px
+            padding: 4px
+            top: -15px
+            right: 10px
+            .boxOne
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 32px
+                height: 32px
+                padding: 2px
+                border-radius: 5px
+                &:hover
+                    background-color: #e0e0e0
+            .boxTwo
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 32px
+                height: 32px
+                padding: 2px
+                border-radius: 5px
+                &:hover
+                    background-color: #e0e0e0
 
 
 
