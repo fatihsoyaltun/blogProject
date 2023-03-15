@@ -410,8 +410,221 @@ ul
             font-weight: 600
             background-color: #ff6718
             border-color: #ff6718
+//* Profile
+#profilePage
+    .profileLeftSide
+        padding: 2rem 1rem
+        border-right: 1px solid black
+        height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .profile-left-top
+            cursor: pointer
+            .profile_left
+                border-radius: 100px
+                padding: .8rem .8rem
+                margin-top: 1rem
+                &:hover
+                    background-color: #eeeeee
+                .content
+                    display: flex
+                    align-items: center
+                    gap: 1rem
+                    color: #000
+                    .P_icon
+                        i
+                            font-size: 1.5rem
+                    .P_text
+                        span
+                            font-size: 1.2rem
+                            font-weight: 600
+            .profile_left_btn
+                margin-top: 1rem
+                .content_btn
+                    color: #fff
+                    .p_btn
+                        width: 200px
+                        background-color: #ff6517
+                        border-radius: 100px
+                        height: 50px
+        .profile-left-bottom
+            cursor: pointer
+            .myDrop
+                padding: .8rem .8rem
+                border-radius: 100px
+                display: flex
+                align-items: center
+                gap:1rem
+                &:hover
+                    background-color: #eeeeee
+                i
+                    font-size: 1.5rem
+                span
+                    font-size: 1.2rem
+                    font-weight: 600
+                .dropdown-menu.show
+                    width: 327px
+    .profileRightSide
+        display: flex
+        padding: 0 24px
+        box-sizing: border-box
+        border-bottom: 1px solid #303136
+        .reader-nav-top
+            display: flex
+            flex: 1 1 1px
+            gap: 60px
+            align-items: center
+            justify-content: space-between
+            padding: 10px
+            .navText
+                cursor: pointer
+                span
+                    font-size: 24px
+                    font-weight: 700
+            .navModule
+                flex: 1 1 1px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                gap: 8px
+                .form
+                    display: flex
+                    flex: 0 1 500px
+                    position: relative
+                    height: 40px
+                    align-items: stretch
+                    i
+                        position: absolute
+                        left: 14px
+                        top: 12px
+                        height: 100%
+                        width: 20px
+                        stroke: #71767b
+                    .module_input
+                        display: flex
+                        flex: 1 1 1px
+                        width: 0
+                        border: 1px solid #303136
+                        border-radius: 20px
+                        padding: 0 20px 0 44px
+                        color: #000
+                        background: #fff
+                        font-size: 14px
+                        &:focus-visible
+                            outline: none
+                .navBtns
+                    display: flex
+                    align-items: center
+                    gap: .5rem
+                    .btnOne
+                        cursor: pointer
+                        button
+                            border-color: transparent
+                            background-color: #eeeeee
+                            border-radius: 1000000px
+                            padding: 5px 10px
+                            height: 40px
+                            &:hover
+                                background-color: #afafaf
+                    .btnTwo
+                        cursor: pointer
+                        width: 50px
+                        height: 40px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        background-color: #eeeeee
+                        border-radius: 1000000px
+                        &:hover
+                            background-color: #afafaf
+                    .btnThree
+                        cursor: pointer
+                        .group
+                            width: 50px
+                            height: 40px
+                            display: flex
+                            gap: 3px
+                            align-items: center
+                            justify-content: center
+                            background-color: #eeeeee
+                            border-radius: 1000000px
+                            &:hover
+                                background-color: #afafaf
+    .owlTwo
+        padding: 20px
+        .owl-carousel
+                .owl-item
+                    width: auto !important
+                .owl-btn
+                    display: flex
+                    width: auto
+                    align-items: center
+                    color: #808080
+                    background-color: #eeeeee
+                    font-size: 14px
+                    font-weight: 600
+                    border: none
+                    padding: 8px 16px
+                    border-radius: 10000px
+                    &:hover
+                        color: #000
+                .owl-btn.active
+                    background-color: #404040
+                    color: #fff
+                .owl-nav
+                    display: flex
+                    position: relative
+                    margin-top: 0
+                    .owl-prev
+                        position: absolute
+                        top: -65px !important
+                        left: -30px
+                        font-size: 50px
+                        color: #ff6517
+                        cursor: pointer
+                        &:hover
+                            background: none
+                            opacity: .8
+                    .disabled
+                        opacity: 1
+                    .owl-next
+                        position: absolute
+                        top: -65px !important
+                        right: -25px
+                        font-size: 50px
+                        color: #ff6517
+                        cursor: pointer
+                        &:hover
+                            background: none
+                            opacity: .8
+    .blogBox
+        cursor: pointer
+        padding: 10px
+        &:hover
+            background-color: #eeeeee
+            border-radius: 5px
+        .blogBox-top
+            padding-bottom: 1.5rem
+            color: gray
+        .blogBox-center
+            .messageBox
+                span
+                    color: gray
+                .messageBox-text-hero
+                    font-size: 1.2rem
+                    font-weight: bold
+                    color: #000
+            .messageImg
 
-// Responive
+
+
+
+
+
+
+
+//! Responive
 //phone
 @media screen and (max-width:576px)
     .navbar-nav

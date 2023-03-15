@@ -30,6 +30,7 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
+
 // collapse icon
 const collapseBtns = document.querySelectorAll('.collapseBtn');
 collapseBtns.forEach((collapseBtn) => {

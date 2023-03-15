@@ -526,6 +526,254 @@ ul li {
   border-color: #ff6718;
 }
 
+#profilePage .profileLeftSide {
+  padding: 2rem 1rem;
+  border-right: 1px solid black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#profilePage .profileLeftSide .profile-left-top {
+  cursor: pointer;
+}
+#profilePage .profileLeftSide .profile-left-top .profile_left {
+  border-radius: 100px;
+  padding: 0.8rem 0.8rem;
+  margin-top: 1rem;
+}
+#profilePage .profileLeftSide .profile-left-top .profile_left:hover {
+  background-color: #eeeeee;
+}
+#profilePage .profileLeftSide .profile-left-top .profile_left .content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #000;
+}
+#profilePage .profileLeftSide .profile-left-top .profile_left .content .P_icon i {
+  font-size: 1.5rem;
+}
+#profilePage .profileLeftSide .profile-left-top .profile_left .content .P_text span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#profilePage .profileLeftSide .profile-left-top .profile_left_btn {
+  margin-top: 1rem;
+}
+#profilePage .profileLeftSide .profile-left-top .profile_left_btn .content_btn {
+  color: #fff;
+}
+#profilePage .profileLeftSide .profile-left-top .profile_left_btn .content_btn .p_btn {
+  width: 200px;
+  background-color: #ff6517;
+  border-radius: 100px;
+  height: 50px;
+}
+#profilePage .profileLeftSide .profile-left-bottom {
+  cursor: pointer;
+}
+#profilePage .profileLeftSide .profile-left-bottom .myDrop {
+  padding: 0.8rem 0.8rem;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#profilePage .profileLeftSide .profile-left-bottom .myDrop:hover {
+  background-color: #eeeeee;
+}
+#profilePage .profileLeftSide .profile-left-bottom .myDrop i {
+  font-size: 1.5rem;
+}
+#profilePage .profileLeftSide .profile-left-bottom .myDrop span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#profilePage .profileLeftSide .profile-left-bottom .myDrop .dropdown-menu.show {
+  width: 327px;
+}
+#profilePage .profileRightSide {
+  display: flex;
+  padding: 0 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #303136;
+}
+#profilePage .profileRightSide .reader-nav-top {
+  display: flex;
+  flex: 1 1 1px;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+#profilePage .profileRightSide .reader-nav-top .navText {
+  cursor: pointer;
+}
+#profilePage .profileRightSide .reader-nav-top .navText span {
+  font-size: 24px;
+  font-weight: 700;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule {
+  flex: 1 1 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .form {
+  display: flex;
+  flex: 0 1 500px;
+  position: relative;
+  height: 40px;
+  align-items: stretch;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .form i {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  height: 100%;
+  width: 20px;
+  stroke: #71767b;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .form .module_input {
+  display: flex;
+  flex: 1 1 1px;
+  width: 0;
+  border: 1px solid #303136;
+  border-radius: 20px;
+  padding: 0 20px 0 44px;
+  color: #000;
+  background: #fff;
+  font-size: 14px;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .form .module_input:focus-visible {
+  outline: none;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnOne {
+  cursor: pointer;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnOne button {
+  border-color: transparent;
+  background-color: #eeeeee;
+  border-radius: 1000000px;
+  padding: 5px 10px;
+  height: 40px;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnOne button:hover {
+  background-color: #afafaf;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnTwo {
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+  border-radius: 1000000px;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnTwo:hover {
+  background-color: #afafaf;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnThree {
+  cursor: pointer;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnThree .group {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+  border-radius: 1000000px;
+}
+#profilePage .profileRightSide .reader-nav-top .navModule .navBtns .btnThree .group:hover {
+  background-color: #afafaf;
+}
+#profilePage .owlTwo {
+  padding: 20px;
+}
+#profilePage .owlTwo .owl-carousel .owl-item {
+  width: auto !important;
+}
+#profilePage .owlTwo .owl-carousel .owl-btn {
+  display: flex;
+  width: auto;
+  align-items: center;
+  color: #808080;
+  background-color: #eeeeee;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10000px;
+}
+#profilePage .owlTwo .owl-carousel .owl-btn:hover {
+  color: #000;
+}
+#profilePage .owlTwo .owl-carousel .owl-btn.active {
+  background-color: #404040;
+  color: #fff;
+}
+#profilePage .owlTwo .owl-carousel .owl-nav {
+  display: flex;
+  position: relative;
+  margin-top: 0;
+}
+#profilePage .owlTwo .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: -65px !important;
+  left: -30px;
+  font-size: 50px;
+  color: #ff6517;
+  cursor: pointer;
+}
+#profilePage .owlTwo .owl-carousel .owl-nav .owl-prev:hover {
+  background: none;
+  opacity: 0.8;
+}
+#profilePage .owlTwo .owl-carousel .owl-nav .disabled {
+  opacity: 1;
+}
+#profilePage .owlTwo .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: -65px !important;
+  right: -25px;
+  font-size: 50px;
+  color: #ff6517;
+  cursor: pointer;
+}
+#profilePage .owlTwo .owl-carousel .owl-nav .owl-next:hover {
+  background: none;
+  opacity: 0.8;
+}
+#profilePage .blogBox {
+  cursor: pointer;
+  padding: 10px;
+}
+#profilePage .blogBox:hover {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+#profilePage .blogBox .blogBox-top {
+  padding-bottom: 1.5rem;
+  color: gray;
+}
+#profilePage .blogBox .blogBox-center .messageBox span {
+  color: gray;
+}
+#profilePage .blogBox .blogBox-center .messageBox .messageBox-text-hero {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
 @media screen and (max-width: 576px) {
   .navbar-nav {
     display: none;
