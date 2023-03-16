@@ -3,7 +3,7 @@
 //Aos animate
 AOS.init({
     duration: 1200,
-})
+});
 
 // OWl carousel
 $('.owl-carousel').owlCarousel({
@@ -53,10 +53,19 @@ collapseBtns.forEach((collapseBtn) => {
 });
 
 // sign
-const signBtns = document.querySelectorAll(".signBtn")
+const signBtns = document.querySelectorAll(".signBtn");
 
 signBtns.forEach(btn => {
   btn.addEventListener('click',()=>{
     window.location.href="routers/sign_in.html";
+  });
+});
+
+//profile
+const profileBtns = document.querySelectorAll(".profileOpen");
+
+profileBtns.forEach(btn =>{
+  btn.addEventListener('click',()=>{
+    window.location.href="routers/profile.html"
   });
 });
